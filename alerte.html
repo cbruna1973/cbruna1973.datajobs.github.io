@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<img lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alerte</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+
+        <h1><b><center>Alerte</center></b></h1>
+
+    <!-- Barre de navigation -->
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <!-- <li><a href="statistique.html">Statistiques de films</a></li> -->
+      <!-- <li><a href="recommandation.html">Recommandation de films</a></li> -->
+      <li><a href="Alerte.html">Alerte</a></li>
+    </ul>
+  </body>
+
+    <div class="text-container">
+    <p>
+      <font size="4px">
+        Pour resté informé des nouveauté des métiers de la data, inscrivz-vous à nos alerte <br /><br />
+      </font>
+
+            <font size="4px"><span style="color: rgb(255, 0, 0);">
+            les champs avec une étoile * sont obligatoire
+
+            </span></font>
+    </p>
+  </div>
+
+
+      <!-- Formulaire -->
+    <div class="form-container">
+        <form action="#" method="post" id="alerte-form">
+            <label for="nom">Nom :*</label>
+            <input type="text" id="nom" name="nom" required>
+            <br /><br />
+
+            <label for="prenom">Prénom :*</label>
+            <input type="text" id="prenom" name="prenom" required>
+            <br /><br />
+
+            <label for="dateNaissance">Date de naissance :*</label>
+            <input type="date" id="dateNaissance" name="dateNaissance" required>
+            <br /><br />
+
+            <label for="email">Adresse e-mail :*</label>
+            <input type="email" id="email" name="email" required>
+            <br /><br />
+
+            <label>Métiers recherchés : Sélectionner un ou plusieurs genres</label>
+            <br /><br />
+            <div class="genre-checkbox">
+                <input type="checkbox" id="Data Analyst" name="métier" value="Data Analyst">
+                <label for="Data Analyst">Data Analyst</label>
+
+                <input type="checkbox" id="Data Scientist" name="métier" value="Data Scientist">
+                <label for="Data Scientist">Data Scientist</label>
+                 <br /><br />
+
+                <!-- Note : Ceci est un exemple simplifié de captcha, pour un usage réel, vous devriez utiliser un service de captcha externe. -->
+                <label for="captcha">Captcha (anti-robot) :*</label>
+                <input type="text" id="captcha" name="captcha" required>
+
+
+            </div>
+            <br />
+            <input type="submit" value="Envoyer">
+        </form>
+    </div>
+
+  <br />
+  <!-- Section pour le pied de page -->
+  <section class="footer-section">
+    <!-- Pied de page -->
+    <footer>© 2023 Mon Site Web | Mentions légales | Contactez-nous</footer>
+  </section>
+</html>
+
+
